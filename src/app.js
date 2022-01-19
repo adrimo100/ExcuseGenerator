@@ -8,7 +8,7 @@ import "./assets/img/4geeks.ico";
 window.onload = () => {
   //write your code here
 
-  document.querySelector("#btn").addEventListener("Click", () => {
+  document.querySelector("#btn").addEventListener("click", () => {
     document.querySelector("#the-excuse").innerHTML = generatedExcuse();
   });
 };
@@ -29,11 +29,11 @@ let generatedExcuse = () => {
 
   a = Math.floor(Math.random() * who.length);
 
-  b = Math.floor(Math.random() * who.length);
+  b = Math.floor(Math.random() * action.length);
 
-  c = Math.floor(Math.random() * who.length);
+  c = Math.floor(Math.random() * what.length);
 
-  d = Math.floor(Math.random() * who.length);
+  d = Math.floor(Math.random() * when.length);
 
   var str = who[a] + " " + action[b] + " " + what[c] + " " + when[d];
 
